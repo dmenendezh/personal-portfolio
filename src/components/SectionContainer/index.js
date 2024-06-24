@@ -1,6 +1,6 @@
 import React from "react";
 
-function Section({ id, className }) {
+function SectionContainer({ id, className }) {
   return (
     <section
       id={id}
@@ -9,4 +9,4 @@ function Section({ id, className }) {
     />
   );
 }
-export default Section;
+export default SectionContainer;
