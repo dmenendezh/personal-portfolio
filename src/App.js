@@ -3,7 +3,7 @@ import "./index.css";
 import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-
+import Badge from "./components/Badge";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
@@ -27,8 +27,20 @@ function App() {
             nameTitle="Hey, I'm Diego Menendez"
             srcImage="/dm.webp"
             altImage="logo image"
-            linkedInUrl="https://www.linkedin.com/in/dmenendezhorta/"
+            href="https://www.linkedin.com/in/dmenendezhorta/"
           />
+          <nav className="flex flex-wrap gap-4 mt-8">
+            <Badge
+              text="LinkedIn"
+              href="https://www.linkedin.com/in/dmenendezhorta/"
+              srcImageIcon="/Icons/LinkedIn.svg"
+            />
+            <Badge
+              text="Contact me"
+              href="mailito:diego.andres.menendez@gmail.com"
+              srcImageIcon="/Icons/Mail.svg"
+            />
+          </nav>{" "}
         </section>
       </main>
     </div>
