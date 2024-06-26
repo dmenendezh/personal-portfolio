@@ -10,7 +10,7 @@ function Hero({ nameTitle, srcImage, altImage, href }) {
           src={srcImage}
           alt={altImage}
         />
-        <Badge text="Open to work" href={href} />
+        <Badge text="Open to work" href={href} showEffect={true} />
       </div>
 
       <h1 className="text-justify text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">

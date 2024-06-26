@@ -1,10 +1,10 @@
 import React from "react";
 
-function Badge({ text, href, srcImageIcon }) {
+function Badge({ text, href, srcImageIcon, showEffect }) {
   return (
     <div className="flex items-center ">
       <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
-        {!srcImageIcon ? (
+        {showEffect ? (
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
         ) : (
           <></>

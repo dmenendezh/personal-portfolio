@@ -21,9 +21,9 @@ function ExperienceItem({ title, company, description, date, technologies }) {
       </div>
       <div className="text-justify relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
         {description}
-        <div className="relative flex flex-row gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+        <div className="relative flex flex-row flex-wrap gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
           {technologies.map((technology) => (
-            <Badge text={technology} href="" />
+            <Badge text={technology} showEffect={false} />
           ))}
         </div>
       </div>
