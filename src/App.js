@@ -32,11 +32,13 @@ function App() {
               text="LinkedIn"
               href="https://www.linkedin.com/in/dmenendezhorta/"
               srcImageIcon="/Icons/LinkedIn.svg"
+              showEffect={false}
             />
             <Badge
               text="Contact me"
               href="mailito:diego.andres.menendez@gmail.com"
               srcImageIcon="/Icons/Mail.svg"
+              showEffect={false}
             />
           </nav>{" "}
         </section>
@@ -45,7 +47,7 @@ function App() {
           <section
             id="experience"
             data-section="experience"
-            className={`section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`}
+            className={`section scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`}
           >
             <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
               {" "}
